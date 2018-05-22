@@ -1,0 +1,22 @@
+Source: puppet-module-saz-resolv-conf
+Section: admin
+Priority: optional
+Maintainer: Joe Lorenz <joe.lorenz@plexxi.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://forge.puppet.com/saz/resolv_conf
+
+Package: puppet-module-saz-resolv-conf
+Architecture: all
+Depends: ${misc:Depends},
+         puppet-common (>= 3),
+         puppet-module-puppetlabs-stdlib (>= 3.2)
+Description: Puppet module for DNS (resolv.conf)
+ Puppet lets you centrally manage every important aspect of your system
+ using a cross-platform specification language that manages all the
+ separate elements normally aggregated in different files, like users,
+ cron jobs, and hosts, along with obviously discrete elements like
+ packages, services, and files.
+ .
+ The resolv_conf module manages the /etc/resolv.conf file which controls DNS
+ client settings.

@@ -1,0 +1,4 @@
+manifests usr/share/puppet/modules.available/saz-resolv_conf
+metadata.json usr/share/puppet/modules.available/saz-resolv_conf
+templates usr/share/puppet/modules.available/saz-resolv_conf
+tests usr/share/puppet/modules.available/saz-resolv_conf

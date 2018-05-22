@@ -13,12 +13,12 @@
 #
 class resolv_conf (
   Array                         $nameservers,
-  String                        $config_file,
-  Boolean                       $use_resolvconf,
-  Optional[String]              $update_cmd,
-  Optional[String]              $package,
-  Boolean                       $manage_package,
-  String                        $package_ensure,
+  String                        $config_file = "/etc/resolv.conf",
+  Boolean                       $use_resolvconf = false,
+  Optional[String]              $update_cmd = undef,
+  Optional[String]              $package = undef,
+  Boolean                       $manage_package = false,
+  String                        $package_ensure = "",
   Optional[String]              $domainname = undef,
   Variant[Array[String],String] $searchpath = [],
   Optional[Array]               $options    = undef,
